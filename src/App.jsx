@@ -1,7 +1,17 @@
 import ProjectCard from './components/ProjectCard'
-
+import vero1 from './assets/images/vero-1.png'
+import vero2 from './assets/images/vero-2.png'
+import ayana1 from './assets/images/ayana-1.jpeg'
+import ayana2 from './assets/images/ayana-2.jpeg'
+import wfm1 from './assets/images/wfm-1.png'
+import wfm2 from './assets/images/wfm-2.png'
+import okky1 from './assets/images/okky-1.png'
+import okky2 from './assets/images/okky-2.png'
+import maripos1 from './assets/images/maripos-1.jpeg'
+import maripos2 from './assets/images/maripos-2.jpeg'
 const projects = [
   {
+    id: 0,
     title: 'Veronika – Telkomsel Chatbot Orchestration',
     shortDescription:
       'Multi-channel chatbot orchestration platform for high-scale customer interaction across major social and messaging channels.',
@@ -9,17 +19,18 @@ const projects = [
       'Built a multi-channel chatbot orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
     thumbnails: [
       {
-        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+        src: vero1,
         alt: 'Veronika orchestration service topology'
       },
       {
-        src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+        src: vero2, 
         alt: 'Veronika real-time messaging infrastructure'
       }
     ],
     tech: ['Java Spring Boot', 'Redis', 'Kafka', 'MySQL', 'Kubernetes', 'gRPC']
   },
   {
+    id: 1,
     title: 'Ayana CRM – FTTH Coverage & Monitoring',
     shortDescription:
       'CRM and operational visibility platform for FTTH coverage, outage detection, and infrastructure response workflows.',
@@ -27,17 +38,18 @@ const projects = [
       'Built a CRM platform with Google Maps polygon visualization, ONT remote reboot capability, outage detection, ticketing workflows, and network monitoring for FTTH providers, helping teams move from reactive to proactive operational handling.',
     thumbnails: [
       {
-        src: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80',
+        src: ayana1,
         alt: 'Ayana CRM service coverage map analytics'
       },
       {
-        src: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80',
+        src: ayana2,
         alt: 'Ayana CRM outage monitoring dashboard'
       }
     ],
     tech: ['Next.js', 'MySQL', 'Python Microservices', 'Redis', 'Docker']
   },
   {
+    id: 2,
     title: 'Workforce Management System',
     shortDescription:
       'Mobile-first workforce orchestration for multi-vendor field technicians with real-time communication.',
@@ -45,35 +57,18 @@ const projects = [
       'Developed a mobile workforce management application for multi-vendor technicians with ticket tracking, WebSocket-based chat, outage handling flows, and an automated WhatsApp rating system to close the service feedback loop.',
     thumbnails: [
       {
-        src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80',
+        src: wfm1,
         alt: 'Workforce app dispatch command center'
       },
       {
-        src: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80',
+        src: wfm2,
         alt: 'Technician ticket tracking mobile workflow'
       }
     ],
     tech: ['Flutter', 'Express.js', 'MySQL', 'Redis', 'WebSocket']
   },
   {
-    title: 'Okky Jelly Drink Raffle System',
-    shortDescription:
-      'Campaign dashboard and consumer engagement microsite optimized for reward distribution at high concurrency.',
-    fullDescription:
-      'Developed a campaign management dashboard and spin-the-wheel microsite integrated with WhatsApp chatbot workflows. Optimized high-concurrency reward distribution using Redis to keep allocation consistent under burst traffic.',
-    thumbnails: [
-      {
-        src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
-        alt: 'Campaign administration panel overview'
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80',
-        alt: 'Reward distribution architecture for campaign'
-      }
-    ],
-    tech: ['Nuxt 3', 'NestJS', 'PostgreSQL', 'Redis']
-  },
-  {
+    id: 4,
     title: 'MariPOS – Multi-Tenant POS & Mini E-Commerce',
     shortDescription:
       'Scalable multi-tenant commerce platform for transaction processing, logistics integration, and payout automation.',
@@ -81,16 +76,35 @@ const projects = [
       'Built a multi-tenant POS and mini e-commerce system with payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
     thumbnails: [
       {
-        src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        src: maripos1,
         alt: 'MariPOS multi-tenant operations dashboard'
       },
       {
-        src: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=80',
+        src: maripos2,
         alt: 'MariPOS transaction and logistics engine'
       }
     ],
     tech: ['Nuxt 3', 'Vue.js', 'Express.js', 'PostgreSQL', 'MongoDB', 'Redis']
-  }
+  },
+  {
+    id: 3,
+    title: 'Okky Jelly Drink Raffle System',
+    shortDescription:
+      'Campaign dashboard and consumer engagement microsite optimized for reward distribution at high concurrency.',
+    fullDescription:
+      'Developed a campaign management dashboard and spin-the-wheel microsite integrated with WhatsApp chatbot workflows. Optimized high-concurrency reward distribution using Redis to keep allocation consistent under burst traffic.',
+    thumbnails: [
+      {
+        src: okky1,
+        alt: 'Campaign administration panel overview'
+      },
+      {
+        src: okky2,
+        alt: 'Reward distribution architecture for campaign'
+      }
+    ],
+    tech: ['Nuxt 3', 'NestJS', 'PostgreSQL', 'Redis']
+  },
 ]
 
 const skills = {
@@ -161,13 +175,7 @@ function App() {
             <div className="mx-auto w-full max-w-[320px]">
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
                 <div className="grid h-64 place-items-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 text-center">
-                  <div>
-                    <div className="mx-auto mb-3 grid h-16 w-16 place-items-center rounded-full bg-slate-200 text-slate-500">
-                      IMG
-                    </div>
-                    <p className="text-sm font-semibold text-slate-700">Profile Photo Placeholder</p>
-                    <p className="mt-1 text-xs text-slate-500">Replace with your professional headshot</p>
-                  </div>
+                  <img className='rounded-xl' src="https://media.licdn.com/dms/image/v2/D5603AQEBma0f7iCoLg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699518054288?e=1773273600&v=beta&t=gVX4AGccto5k2gSOqJ7louSw0XVLDK0l42yS2QOzbVI" alt="" />
                 </div>
               </div>
             </div>
@@ -179,10 +187,7 @@ function App() {
         <section id="about" className="section-container">
           <h2 className="section-title">About</h2>
           <p className="section-subtitle">
-            I&apos;m a software engineer with experience building distributed systems, chatbot orchestration
-            platforms, CRM tools, workforce management systems, and multi-tenant commerce solutions. I
-            enjoy solving backend complexity, real-time communication problems, and designing scalable
-            architecture.
+            I’m a Software Engineer with 3 years of hands-on experience building distributed systems, chatbot orchestration platforms, CRM tools, workforce management systems, and multi-tenant commerce solutions. I focus on backend engineering, real-time communication systems, and designing scalable architectures that can handle real-world production demands.
           </p>
         </section>
 
@@ -231,31 +236,31 @@ function App() {
           <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-soft md:p-10">
             <h2 className="section-title">Contact</h2>
             <p className="section-subtitle mt-4">
-              Open to backend, distributed systems, and fullstack engineering opportunities.
+              Open to Fullstack Developer opportunities and distributed systems.
             </p>
 
             <div className="mt-8 grid gap-4 text-sm text-slate-700 md:grid-cols-3">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:ivallavif@gmail.com"
                 className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 transition hover:border-slate-300 hover:bg-white"
               >
-                Email: your.email@example.com
+                Email: ivallavif@gmail.com
               </a>
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://linkedin.com/in/ivallavifahrazi"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 transition hover:border-slate-300 hover:bg-white"
               >
-                LinkedIn: linkedin.com/in/your-profile
+                LinkedIn: linkedin.com/in/ivallavifahrazi
               </a>
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/valrazi"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 transition hover:border-slate-300 hover:bg-white"
               >
-                GitHub: github.com/your-username
+                GitHub: github.com/valrazi
               </a>
             </div>
           </div>

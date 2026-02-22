@@ -14,7 +14,7 @@ const techIcons = {
   'Express.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
   WebSocket: 'https://cdn.simpleicons.org/socketdotio/0F172A',
   'Nuxt 3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
-  NestJS: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+  NestJS: 'https://hexmos.com/freedevtools/svg_icons/nestjs/nestjs-original.svg',
   PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   'Vue.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
   MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
@@ -27,14 +27,16 @@ function ProjectCard({ project }) {
     <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
-          {project.thumbnails.map((thumbnail) => (
-            <img
-              key={thumbnail.alt}
-              src={thumbnail.src}
-              alt={thumbnail.alt}
-              className="h-28 w-full rounded-xl border border-slate-200 object-cover md:h-32"
-              loading="lazy"
-            />
+          {project.thumbnails.map((thumbnail, idx) => (
+            <a href={thumbnail.src} target='_blank'>
+              <img
+                key={thumbnail.alt}
+                src={thumbnail.src}
+                alt={thumbnail.alt}
+                className={`h-28 w-full rounded-xl border border-slate-200 ${project.id == 0 || project.id == 2 ? 'object-contain' : 'object-cover'} md:h-32`}
+                loading="lazy"
+              />
+            </a>
           ))}
         </div>
 
@@ -52,9 +54,8 @@ function ProjectCard({ project }) {
         <p className="text-sm leading-7 text-slate-600">{project.shortDescription}</p>
 
         <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-[34rem] opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[34rem] opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="border-t border-slate-100 pt-4">
             <p className="text-sm leading-7 text-slate-700">{project.fullDescription}</p>
