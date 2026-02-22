@@ -6,7 +6,7 @@ const techIcons = {
   Kafka: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
   MySQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   Kubernetes: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
-  gRPC: 'https://cdn.simpleicons.org/grpc/0F172A',
+  gRPC: 'https://grpc.io/img/logos/grpc-icon-color.png',
   'Next.js': 'https://cdn.simpleicons.org/nextdotjs/0F172A',
   'Python Microservices': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   Docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',

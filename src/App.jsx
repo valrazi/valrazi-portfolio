@@ -118,7 +118,7 @@ const skillIcons = {
   Docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   Kubernetes: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
   Kafka: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
-  gRPC: 'https://cdn.simpleicons.org/grpc/0F172A',
+  gRPC: 'https://grpc.io/img/logos/grpc-icon-color.png',
   SSE: 'https://cdn.simpleicons.org/serverless/334155',
   WebSocket: 'https://cdn.simpleicons.org/socketdotio/0F172A',
   'Redis Pub/Sub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'
@@ -129,31 +129,47 @@ function App() {
     <div className="min-h-screen">
       <header className="relative overflow-hidden border-b border-slate-200 bg-white grid-backdrop">
         <div className="section-container relative z-10 py-24 md:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-5 inline-flex rounded-full border border-slate-200 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 shadow-sm">
-              Portfolio
-            </p>
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl">
-              Ivallavi Fahrazi
-            </h1>
-            <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Fullstack Engineer</p>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
-              I build scalable backend systems, real-time applications, and distributed architectures.
-            </p>
+          <div className="grid items-center gap-10 lg:grid-cols-[1fr_320px]">
+            <div className="max-w-3xl">
+              <p className="mb-5 inline-flex rounded-full border border-slate-200 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 shadow-sm">
+                Portfolio
+              </p>
+              <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl">
+                Ivallavi Fahrazi
+              </h1>
+              <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Fullstack Engineer</p>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+                I build scalable backend systems, real-time applications, and distributed architectures.
+              </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
-              >
-                Contact Me
-              </a>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="#projects"
+                  className="rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full max-w-[320px]">
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+                <div className="grid h-64 place-items-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 text-center">
+                  <div>
+                    <div className="mx-auto mb-3 grid h-16 w-16 place-items-center rounded-full bg-slate-200 text-slate-500">
+                      IMG
+                    </div>
+                    <p className="text-sm font-semibold text-slate-700">Profile Photo Placeholder</p>
+                    <p className="mt-1 text-xs text-slate-500">Replace with your professional headshot</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
