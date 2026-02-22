@@ -102,6 +102,28 @@ const skills = {
   'Real-time': ['WebSocket', 'Redis Pub/Sub']
 }
 
+const skillIcons = {
+  'Java (Spring Boot)': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+  'Node.js (Express, NestJS)': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+  Python: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+  React: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+  'Next.js': 'https://cdn.simpleicons.org/nextdotjs/0F172A',
+  'Vue.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+  'Nuxt 3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
+  Flutter: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+  MySQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+  PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  Redis: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+  Docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  Kubernetes: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
+  Kafka: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
+  gRPC: 'https://cdn.simpleicons.org/grpc/0F172A',
+  SSE: 'https://cdn.simpleicons.org/serverless/334155',
+  WebSocket: 'https://cdn.simpleicons.org/socketdotio/0F172A',
+  'Redis Pub/Sub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg'
+}
+
 function App() {
   return (
     <div className="min-h-screen">
@@ -155,7 +177,7 @@ function App() {
             business use cases.
           </p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid items-start gap-6 md:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
@@ -173,7 +195,15 @@ function App() {
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500">{category}</h3>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700">
                   {items.map((item) => (
-                    <li key={item}>• {item}</li>
+                    <li key={item} className="flex items-center gap-2">
+                      <img
+                        src={skillIcons[item] ?? 'https://cdn.simpleicons.org/code/334155'}
+                        alt={`${item} icon`}
+                        className="h-4 w-4"
+                        loading="lazy"
+                      />
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               </article>
