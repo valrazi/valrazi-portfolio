@@ -7,6 +7,16 @@ const projects = [
       'Multi-channel chatbot orchestration platform for high-scale customer interaction across major social and messaging channels.',
     fullDescription:
       'Built a multi-channel chatbot orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
+    thumbnails: [
+      {
+        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+        alt: 'Veronika orchestration service topology'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+        alt: 'Veronika real-time messaging infrastructure'
+      }
+    ],
     tech: ['Java Spring Boot', 'Redis', 'Kafka', 'MySQL', 'Kubernetes', 'gRPC']
   },
   {
@@ -15,6 +25,16 @@ const projects = [
       'CRM and operational visibility platform for FTTH coverage, outage detection, and infrastructure response workflows.',
     fullDescription:
       'Built a CRM platform with Google Maps polygon visualization, ONT remote reboot capability, outage detection, ticketing workflows, and network monitoring for FTTH providers, helping teams move from reactive to proactive operational handling.',
+    thumbnails: [
+      {
+        src: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80',
+        alt: 'Ayana CRM service coverage map analytics'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80',
+        alt: 'Ayana CRM outage monitoring dashboard'
+      }
+    ],
     tech: ['Next.js', 'MySQL', 'Python Microservices', 'Redis', 'Docker']
   },
   {
@@ -23,6 +43,16 @@ const projects = [
       'Mobile-first workforce orchestration for multi-vendor field technicians with real-time communication.',
     fullDescription:
       'Developed a mobile workforce management application for multi-vendor technicians with ticket tracking, WebSocket-based chat, outage handling flows, and an automated WhatsApp rating system to close the service feedback loop.',
+    thumbnails: [
+      {
+        src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80',
+        alt: 'Workforce app dispatch command center'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80',
+        alt: 'Technician ticket tracking mobile workflow'
+      }
+    ],
     tech: ['Flutter', 'Express.js', 'MySQL', 'Redis', 'WebSocket']
   },
   {
@@ -31,6 +61,16 @@ const projects = [
       'Campaign dashboard and consumer engagement microsite optimized for reward distribution at high concurrency.',
     fullDescription:
       'Developed a campaign management dashboard and spin-the-wheel microsite integrated with WhatsApp chatbot workflows. Optimized high-concurrency reward distribution using Redis to keep allocation consistent under burst traffic.',
+    thumbnails: [
+      {
+        src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
+        alt: 'Campaign administration panel overview'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80',
+        alt: 'Reward distribution architecture for campaign'
+      }
+    ],
     tech: ['Nuxt 3', 'NestJS', 'PostgreSQL', 'Redis']
   },
   {
@@ -39,6 +79,16 @@ const projects = [
       'Scalable multi-tenant commerce platform for transaction processing, logistics integration, and payout automation.',
     fullDescription:
       'Built a multi-tenant POS and mini e-commerce system with payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
+    thumbnails: [
+      {
+        src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        alt: 'MariPOS multi-tenant operations dashboard'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=80',
+        alt: 'MariPOS transaction and logistics engine'
+      }
+    ],
     tech: ['Nuxt 3', 'Vue.js', 'Express.js', 'PostgreSQL', 'MongoDB', 'Redis']
   }
 ]
