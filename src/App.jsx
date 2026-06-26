@@ -175,7 +175,7 @@ function App() {
             <div className="mx-auto w-full max-w-[320px]">
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
                 <div className="grid h-64 place-items-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 text-center">
-                  <img className='rounded-xl' src="https://media.licdn.com/dms/image/v2/D5603AQEBma0f7iCoLg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699518054288?e=1773273600&v=beta&t=gVX4AGccto5k2gSOqJ7louSw0XVLDK0l42yS2QOzbVI" alt="" />
+                  <img className='rounded-xl' src="https://media.licdn.com/dms/image/v2/D5603AQEfGwbT5hpCFQ/profile-displayphoto-crop_800_800/B56Z6th8dCIQAM-/0/1781027818431?e=1784160000&v=beta&t=f0a99N3MYJjWbydj2wGclOR-jk_FZdrfoVGbADr399o" alt="" />
                 </div>
               </div>
             </div>
