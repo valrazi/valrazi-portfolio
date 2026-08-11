@@ -17,7 +17,12 @@ const techIcons = {
   NestJS: 'https://hexmos.com/freedevtools/svg_icons/nestjs/nestjs-original.svg',
   PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   'Vue.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
-  MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
+  MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  'LangChain': 'https://cdn.simpleicons.org/langchain/0F172A',
+  'LangGraph': 'https://cdn.simpleicons.org/graphql/0F172A',
+  'RAG': 'https://cdn.simpleicons.org/openai/0F172A',
+  'Gemini API': 'https://cdn.simpleicons.org/googlegemini/8E75B2',
+  'NLP.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
 }
 
 function ProjectCard({ project }) {
