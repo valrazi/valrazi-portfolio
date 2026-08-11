@@ -9,6 +9,7 @@ import okky1 from './assets/images/okky-1.png'
 import okky2 from './assets/images/okky-2.png'
 import maripos1 from './assets/images/maripos-1.jpeg'
 import maripos2 from './assets/images/maripos-2.jpeg'
+
 const projects = [
   {
     id: 0,
@@ -111,6 +112,7 @@ const skills = {
   Backend: ['Java (Spring Boot)', 'Node.js (Express, NestJS)', 'Python'],
   Frontend: ['React', 'Next.js', 'Vue.js', 'Nuxt 3'],
   Mobile: ['Flutter'],
+  'AI & NLP': ['LangChain', 'LangGraph', 'RAG', 'Vector Embeddings', 'Gemini API', 'NLP.js'],
   Database: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'],
   Infrastructure: ['Docker', 'Kubernetes', 'Kafka', 'gRPC', 'SSE'],
   'Real-time': ['WebSocket', 'Redis Pub/Sub']
@@ -125,6 +127,12 @@ const skillIcons = {
   'Vue.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
   'Nuxt 3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
   Flutter: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+  LangChain: 'https://cdn.simpleicons.org/langchain/0F172A',
+  LangGraph: 'https://cdn.simpleicons.org/graphql/0F172A',
+  RAG: 'https://cdn.simpleicons.org/openai/0F172A',
+  'Vector Embeddings': 'https://cdn.simpleicons.org/datastax/0F172A',
+  'Gemini API': 'https://cdn.simpleicons.org/googlegemini/8E75B2',
+  'NLP.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   MySQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
@@ -151,9 +159,9 @@ function App() {
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl">
                 Ivallavi Fahrazi
               </h1>
-              <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Fullstack Engineer</p>
+              <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Full-Stack Web Developer</p>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
-                I build scalable backend systems, real-time applications, and distributed architectures.
+                I build scalable backend systems, real-time applications, distributed architectures, and AI-powered conversational agents.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -187,7 +195,7 @@ function App() {
         <section id="about" className="section-container">
           <h2 className="section-title">About</h2>
           <p className="section-subtitle">
-            I’m a Software Engineer with 3 years of hands-on experience building distributed systems, chatbot orchestration platforms, CRM tools, workforce management systems, and multi-tenant commerce solutions. I focus on backend engineering, real-time communication systems, and designing scalable architectures that can handle real-world production demands.
+            I’m a Full-Stack Web Developer with over 3 years of hands-on experience designing, developing, and maintaining robust web applications. My expertise spans modern web technologies and AI architectures, where I focus on building scalable systems, real-time communications, and transactional chatbots using LangChain, LangGraph, RAG (Retrieval-Augmented Generation), Function Calling, and the Gemini Model.
           </p>
         </section>
 
