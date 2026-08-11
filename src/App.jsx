@@ -15,7 +15,7 @@ const projects = [
     id: 0,
     title: 'Veronika – Telkomsel Chatbot Orchestration',
     shortDescription:
-      'AI-driven customer care agent and multi-channel orchestration platform leveraging LangChain, LangGraph, and RAG for scalable message processing.',
+      'AI-driven customer care agent and multi-channel orchestration platform leveraging LangChain, LangGraph, and RAG for scalable message processing. ',
     fullDescription:
       'Built a multi-channel chatbot powered using LangChain & LangGraph and orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
     thumbnails: [
