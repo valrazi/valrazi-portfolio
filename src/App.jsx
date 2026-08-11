@@ -159,7 +159,7 @@ function App() {
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl">
                 Ivallavi Fahrazi
               </h1>
-              <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Full-Stack Web Developer</p>
+              <p className="mt-4 text-lg font-semibold text-slate-700 md:text-xl">Full-Stack & AI Developer</p>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
                 I build scalable backend systems, real-time applications, distributed architectures, and AI-powered conversational agents.
               </p>
@@ -197,7 +197,7 @@ function App() {
         <section id="about" className="section-container">
           <h2 className="section-title">About</h2>
           <p className="section-subtitle">
-            I’m a Full-Stack Web Developer with over 3 years of hands-on experience designing, developing, and maintaining robust web applications. My expertise spans modern web technologies and AI architectures, where I focus on building scalable systems, real-time communications, and transactional chatbots using LangChain, LangGraph, RAG (Retrieval-Augmented Generation), Function Calling, and the Gemini Model.
+            I’m a Full-Stack & AI Developer with over 3 years of hands-on experience designing, developing, and maintaining robust web applications. My expertise spans modern web technologies and AI architectures, where I focus on building scalable systems, real-time communications, and transactional chatbots using LangChain, LangGraph, RAG (Retrieval-Augmented Generation), Function Calling, and the Gemini Model.
           </p>
         </section>
 
