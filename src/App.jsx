@@ -15,9 +15,9 @@ const projects = [
     id: 0,
     title: 'Veronika – Telkomsel Chatbot Orchestration',
     shortDescription:
-      'Multi-channel chatbot orchestration platform for high-scale customer interaction across major social and messaging channels.',
+      'AI-driven customer care agent and multi-channel orchestration platform leveraging LangChain, LangGraph, and RAG for scalable message processing.',
     fullDescription:
-      'Built a multi-channel chatbot powered using Langchain & Langgraph and orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
+      'Built a multi-channel chatbot powered using LangChain & LangGraph and orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
     thumbnails: [
       {
         src: vero1,
@@ -28,7 +28,7 @@ const projects = [
         alt: 'Veronika real-time messaging infrastructure'
       }
     ],
-    tech: ['Java Spring Boot', 'Redis', 'Kafka', 'MySQL', 'Kubernetes', 'gRPC']
+    tech: ['Java Spring Boot', 'LangChain', 'LangGraph', 'RAG', 'Gemini API', 'Redis', 'Kafka', 'MySQL', 'Kubernetes', 'gRPC']
   },
   {
     id: 1,
@@ -72,9 +72,9 @@ const projects = [
     id: 4,
     title: 'MariPOS – Multi-Tenant POS & Mini E-Commerce',
     shortDescription:
-      'Scalable multi-tenant commerce platform for transaction processing, logistics integration, and payout automation.',
+      'Multi-tenant commerce engine featuring NLP.js intelligent FAQ chatbots, logistics integrations, and automated payout disbursement.',
     fullDescription:
-      'Built a multi-tenant POS and mini e-commerce system with whatsapp chatbot integration using NLPJS, payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
+      'Built a multi-tenant POS and mini e-commerce system with WhatsApp chatbot integration using NLP.js, payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
     thumbnails: [
       {
         src: maripos1,
@@ -85,7 +85,7 @@ const projects = [
         alt: 'MariPOS transaction and logistics engine'
       }
     ],
-    tech: ['Nuxt 3', 'Vue.js', 'Express.js', 'PostgreSQL', 'MongoDB', 'Redis']
+    tech: ['Nuxt 3', 'Vue.js', 'Express.js', 'NLP.js', 'PostgreSQL', 'MongoDB', 'Redis']
   },
   {
     id: 3,
@@ -181,10 +181,12 @@ function App() {
             </div>
 
             <div className="mx-auto w-full max-w-[320px]">
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-                <div className="grid h-64 place-items-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 text-center">
-                  <img className='rounded-xl' src="https://i.ibb.co.com/zVHzGLdv/IMG-9790-1.jpg" alt="" />
-                </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+                <img 
+                  className="h-64 w-full rounded-xl object-cover" 
+                  src="https://i.ibb.co.com/zVHzGLdv/IMG-9790-1.jpg" 
+                  alt="Ivallavi Fahrazi" 
+                />
               </div>
             </div>
           </div>
