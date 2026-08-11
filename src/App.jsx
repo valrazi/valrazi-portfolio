@@ -16,7 +16,7 @@ const projects = [
     shortDescription:
       'Multi-channel chatbot orchestration platform for high-scale customer interaction across major social and messaging channels.',
     fullDescription:
-      'Built a multi-channel chatbot orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
+      'Built a multi-channel chatbot powered using Langchain & Langgraph and orchestration system handling WhatsApp, Facebook, Instagram, and Telegram. Implemented SSE updates, Redis Pub/Sub fan-out, Kafka event streaming, and gRPC service routing in a Kubernetes environment to ensure resilient message flow and operational scale.',
     thumbnails: [
       {
         src: vero1,
@@ -73,7 +73,7 @@ const projects = [
     shortDescription:
       'Scalable multi-tenant commerce platform for transaction processing, logistics integration, and payout automation.',
     fullDescription:
-      'Built a multi-tenant POS and mini e-commerce system with payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
+      'Built a multi-tenant POS and mini e-commerce system with whatsapp chatbot integration using NLPJS, payment gateway integration, automated payouts, Mapbox geocoding, and third-party delivery APIs. The architecture supported tenant isolation while keeping operations efficient and extendable.',
     thumbnails: [
       {
         src: maripos1,
@@ -175,7 +175,7 @@ function App() {
             <div className="mx-auto w-full max-w-[320px]">
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
                 <div className="grid h-64 place-items-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 text-center">
-                  <img className='rounded-xl' src="https://media.licdn.com/dms/image/v2/D5603AQEfGwbT5hpCFQ/profile-displayphoto-crop_800_800/B56Z6th8dCIQAM-/0/1781027818431?e=1784160000&v=beta&t=f0a99N3MYJjWbydj2wGclOR-jk_FZdrfoVGbADr399o" alt="" />
+                  <img className='rounded-xl' src="https://i.ibb.co.com/zVHzGLdv/IMG-9790-1.jpg" alt="" />
                 </div>
               </div>
             </div>
