@@ -9,6 +9,7 @@ import okky1 from './assets/images/okky-1.png'
 import okky2 from './assets/images/okky-2.png'
 import maripos1 from './assets/images/maripos-1.jpeg'
 import maripos2 from './assets/images/maripos-2.jpeg'
+import me from './assets/images/me.jpeg'
 
 const projects = [
   {
@@ -184,7 +185,7 @@ function App() {
               <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
                 <img 
                   className="h-64 w-full rounded-xl object-cover" 
-                  src="https://i.ibb.co.com/zVHzGLdv/IMG-9790-1.jpg" 
+                  src={me}
                   alt="Ivallavi Fahrazi" 
                 />
               </div>
